@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noEmit": false,
+    "noEmitOnError": false,
+    "outDir": "./dist",
+    "removeComments": false,
+    "rootDir": "./src",
+    "stripInternal": false
+  },
+  "exclude": ["**/__doubles__", "**/__tests__"],
+  "include": ["src"],
+  "extends": "./tsconfig.json"
+}

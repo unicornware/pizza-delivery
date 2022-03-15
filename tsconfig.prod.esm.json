@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "importsNotUsedAsValues": "remove",
+    "module": "es2022",
+    "outDir": "./esm",
+    "preserveValueImports": true
+  },
+  "extends": "./tsconfig.prod.json"
+}

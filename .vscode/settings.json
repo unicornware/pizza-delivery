@@ -1,0 +1,73 @@
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.options": {
+    "extensions": [".cjs", ".md", ".ts"],
+    "overrideConfigFile": "./.eslintrc.cjs"
+  },
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "markdown",
+    "typescript",
+    "typescriptreact"
+  ],
+  "files.associations": {
+    ".env*": "shellscript",
+    "commit-msg": "shellscript",
+    "pre-commit": "shellscript",
+    "pre-push": "shellscript"
+  },
+  "prettier.configPath": "./.prettierrc.cjs",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "vsicons.associations.files": [
+    {
+      "extensions": [".commitlintrc.ts"],
+      "format": "svg",
+      "icon": "commitlint"
+    },
+    {
+      "extensions": [
+        ".eslintrc.base.cjs",
+        ".eslintrc.spec.cjs",
+        ".eslintrc.spellcheck.cjs"
+      ],
+      "format": "svg",
+      "icon": "eslint"
+    },
+    {
+      "extensions": [".lintstagedrc.cjs"],
+      "format": "svg",
+      "icon": "lintstagedrc"
+    },
+    {
+      "extensions": ["prod.cjs.json", "prod.esm.json", "prod.types.json"],
+      "format": "svg",
+      "icon": "tsconfig"
+    },
+
+    {
+      "extensions": ["yarnrc.yml"],
+      "format": "svg",
+      "icon": "yarn"
+    }
+  ],
+  "vsicons.associations.folders": [
+    {
+      "extensions": ["__fixtures__"],
+      "format": "svg",
+      "icon": "data"
+    },
+    {
+      "extensions": ["samples"],
+      "format": "svg",
+      "icon": "docs"
+    },
+    {
+      "extensions": ["types"],
+      "format": "svg",
+      "icon": "typings"
+    }
+  ]
+}

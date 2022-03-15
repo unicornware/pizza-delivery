@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "importHelpers": false,
+    "module": "commonjs",
+    "outDir": "./cjs"
+  },
+  "extends": "./tsconfig.prod.json"
+}
