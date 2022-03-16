@@ -9,6 +9,6 @@
   - [x] `Location`
   - [x] `Pizzeria`
 - [x] Challenge Runner
-- [ ] QA - Documentation
-  - [ ] `CONTRIBUTING`
-  - [ ] `README`
+- [x] QA - Documentation
+  - [x] `CONTRIBUTING`
+  - [x] `README`

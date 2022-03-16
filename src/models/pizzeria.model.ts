@@ -53,6 +53,8 @@ class Pizzeria {
   /**
    * Executes a search against houses {@link dispatcher}'s team has visited.
    *
+   * @see https://github.com/flex-development/mango#mango-finder
+   *
    * @public
    *
    * @param {SearchParams<IHouse>} [params] - Search parameters

@@ -148,6 +148,8 @@ class Dispatcher extends Employee {
   /**
    * Executes a search against houses {@link team} has visited.
    *
+   * @see https://github.com/flex-development/mango#mango-finder
+   *
    * @public
    *
    * @param {SearchParams<IHouse>} [params] - Search parameters

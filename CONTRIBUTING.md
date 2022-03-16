@@ -106,7 +106,7 @@ Follow the steps below to autosource environment variables:
 
 The examples in this guide contain references to custom Git aliases.
 
-See [`.gitconfig`](.git/config) for an exhausive list of aliases.
+See [`.gitconfig`](.github/.gitconfig) for an exhausive list of aliases.
 
 ### Clone & Install
 
