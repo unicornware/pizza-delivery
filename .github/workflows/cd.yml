@@ -100,12 +100,13 @@ jobs:
 
             core.setOutput('args', `${tarball} ${tag}`.trim())
   publish-package:
-    name: Publish package to GPR & NPM
+    name: Publish package to GPR
     if: ${{ needs.metadata.outputs.publish }}
     needs: metadata
     runs-on: ubuntu-latest
     env:
       GH_PAT: ${{ secrets.PAT_GPR_ADMIN }}
+      NODE_AUTH_TOKEN: ${{ secrets.PAT_GPR_ADMIN }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN_ADMIN }}
     strategy:
       matrix:
@@ -128,8 +129,6 @@ jobs:
       - id: dependencies
         name: Install dependencies
         run: yarn --immutable
-        env:
-          NODE_AUTH_TOKEN: ${{ env.GH_PAT }}
       - id: env
         name: Set environment variables
         run: ./tools/cli/loadenv.cjs -gc=production
@@ -141,23 +140,6 @@ jobs:
         name: Publish package [GPR]
         working-directory: ${{ needs.metadata.outputs.directory }}
         run: npm publish ${{ needs.metadata.outputs.publish_args }}
-        env:
-          NODE_AUTH_TOKEN: ${{ env.GH_PAT }}
-      - id: setup-npmrc-npm
-        name: Setup .npmrc file [NPM]
-        uses: actions/setup-node@v2
-        with:
-          always-auth: true
-          cache: yarn
-          node-version: ${{ matrix.node }}
-          registry-url: https://registry.npmjs.org
-          scope: '@${{ github.repository_owner }}'
-      - id: publish-to-npm
-        name: Publish package [NPM]
-        working-directory: ${{ needs.metadata.outputs.directory }}
-        run: npm publish ${{ needs.metadata.outputs.publish_args }}
-        env:
-          NODE_AUTH_TOKEN: ${{ env.NPM_TOKEN }}
   update-production-branch:
     name: Update production branch
     needs: publish-package
