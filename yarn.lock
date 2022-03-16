@@ -542,6 +542,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flex-development/exceptions@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@flex-development/exceptions@npm:2.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fexceptions%2F2.0.0%2Fc6c8caae7b1bec604ae2c6491c19ff292869fc735cbeba19956fb21ebb7a38b9"
+  dependencies:
+    "@types/lodash.isplainobject": latest
+    "@types/lodash.omit": latest
+    lodash.isplainobject: latest
+    lodash.omit: latest
+  peerDependencies:
+    axios: "*"
+  checksum: 1a3b9f5ff2c7851db340b349af1d33a50c881163bf74c4511a9673de7844d05384604921ff8a6ccd375acb6f5b325d3f83722ef5e7c35276e87d1dc8a23e0efd
+  languageName: node
+  linkType: hard
+
 "@flex-development/exceptions@npm:2.0.1":
   version: 2.0.1
   resolution: "@flex-development/exceptions@npm:2.0.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fexceptions%2F2.0.1%2F008a7848fd33bf966cbc98c45188e78a74274140aa6d71460cd770be213a47ae"
@@ -632,6 +646,36 @@ __metadata:
     shelljs:
       optional: true
   checksum: 92144ab55dcbc4e3f60d5025f26f39a219df39d181c8360fe2b2f4ce5a27e903a60be05042929c0380d5f719cd9b5eecd379c7419bc5eef8eddc533f8c7c6cea
+  languageName: node
+  linkType: hard
+
+"@flex-development/mango@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@flex-development/mango@npm:5.1.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Fmango%2F5.1.0%2F34c62daeb59112b9ab616786a9e3fa7cfb2ef244a0a2155b304e45c2cdc9e091"
+  dependencies:
+    "@flex-development/exceptions": 2.0.0
+    "@flex-development/tutils": 3.1.0
+    "@types/debug": 4.1.5
+    "@types/lodash.isboolean": 3.0.6
+    "@types/lodash.isempty": 4.4.6
+    "@types/lodash.merge": 4.6.6
+    "@types/lodash.uniq": 4.5.6
+    "@types/node": 15.3.1
+    "@types/qs": 6.9.6
+    "@types/uuid": 8.3.0
+    class-transformer: 0.4.0
+    class-transformer-validator: 0.9.1
+    class-validator: 0.13.1
+    debug: 4.3.1
+    lodash.isboolean: 3.0.3
+    lodash.isempty: 4.4.0
+    lodash.merge: 4.6.2
+    lodash.uniq: 4.5.0
+    mingo: 4.1.2
+    qs-to-mongo: 2.0.0
+    reflect-metadata: 0.1.13
+    uuid: 8.3.2
+  checksum: c04561ac6add8665447e02f72e6cad5c318eaab960761620d8b1bfba4337dd076b9729005de42524441e07e3c4762c413fe1d5fba9c70c4bcf7dadbf875958a4
   languageName: node
   linkType: hard
 
@@ -1010,6 +1054,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/debug@npm:4.1.5":
+  version: 4.1.5
+  resolution: "@types/debug@npm:4.1.5"
+  checksum: 36bdb74909be193aeeb8c9bb64ef45d691f35181dcf75285728ec1e07103cb91042be2e8294f0624fc5922d9b4f68482faf5ea3068288577ebdccee76cd7870c
+  languageName: node
+  linkType: hard
+
 "@types/dotenv-defaults@npm:2.0.1":
   version: 2.0.1
   resolution: "@types/dotenv-defaults@npm:2.0.1"
@@ -1092,12 +1143,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.isboolean@npm:3.0.6":
+  version: 3.0.6
+  resolution: "@types/lodash.isboolean@npm:3.0.6"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 4fa132d2d28247928b502023752a312fdcfe8e1d9910f961a4acc76fc2d3b4b1d6ca80791bdf871c6f1eea9f3010840d9cf927bb771fa9b3da4c31c6f3a9acf3
+  languageName: node
+  linkType: hard
+
+"@types/lodash.isempty@npm:4.4.6":
+  version: 4.4.6
+  resolution: "@types/lodash.isempty@npm:4.4.6"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 6364a6821841f7ba57d740f0ab254e15cc07ed46739e5d37f293b5a1203b0e710c463fdc5ec9fd6f0432ba5c5f3e67e0590e2322c8065e28275d6736bf663b0f
+  languageName: node
+  linkType: hard
+
 "@types/lodash.isplainobject@npm:latest":
   version: 4.0.6
   resolution: "@types/lodash.isplainobject@npm:4.0.6"
   dependencies:
     "@types/lodash": "*"
   checksum: 988d1ced75fc75efbb0aa93fc6c56287e2bcf63b3efad375dc1cb5373c8a05600dcb4fb047b078d532d176ccf180f581aead425e349e80e1fb43ad98b88b6cef
+  languageName: node
+  linkType: hard
+
+"@types/lodash.merge@npm:4.6.6":
+  version: 4.6.6
+  resolution: "@types/lodash.merge@npm:4.6.6"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: 62ec56f14b3077f7174497856e9b277db811943cd11b1d67d2a8e51a1803bd49319e8aaf62e745c696af972354a575dbb8a85d3aecf4ae774caf062dc31ac46e
   languageName: node
   linkType: hard
 
@@ -1116,6 +1194,15 @@ __metadata:
   dependencies:
     "@types/lodash": "*"
   checksum: ad28ecad31cb08cbdd52a24d3557150bc935da3b0b164a36393330e0fb5dbd09485fb85a3d5ea74ee3f91671d88dd55663887cfad88c5b83ce0f9ca16ed9fc11
+  languageName: node
+  linkType: hard
+
+"@types/lodash.uniq@npm:4.5.6":
+  version: 4.5.6
+  resolution: "@types/lodash.uniq@npm:4.5.6"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: cbc8d8f19d249dc708ec9cd2d618aa3ca50c21d6e66692579fcb0ef0153c4add918c5d9075686f66d140fa276ae5043eed64e09477a80be3720f9104410fdcab
   languageName: node
   linkType: hard
 
@@ -1181,6 +1268,13 @@ __metadata:
   version: 4.0.0
   resolution: "@types/parse-json@npm:4.0.0"
   checksum: fd6bce2b674b6efc3db4c7c3d336bd70c90838e8439de639b909ce22f3720d21344f52427f1d9e57b265fcb7f6c018699b99e5e0c208a1a4823014269a6bf35b
+  languageName: node
+  linkType: hard
+
+"@types/qs@npm:6.9.6":
+  version: 6.9.6
+  resolution: "@types/qs@npm:6.9.6"
+  checksum: 01871b1cf7062717ec76fcb9b29ddae1e04fcfadc1c76d86ec2571e72f27bf09ff31b094b295be8d4ca664aeec9b8965563680b31fcab7aba1ed93afac5181cd
   languageName: node
   linkType: hard
 
@@ -1265,6 +1359,13 @@ __metadata:
   version: 2.0.6
   resolution: "@types/unist@npm:2.0.6"
   checksum: 25cb860ff10dde48b54622d58b23e66214211a61c84c0f15f88d38b61aa1b53d4d46e42b557924a93178c501c166aa37e28d7f6d994aba13d24685326272d5db
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:8.3.0":
+  version: 8.3.0
+  resolution: "@types/uuid@npm:8.3.0"
+  checksum: 0f46b15020b9c252473fb327a6491fd7d238c7b5bbaebd32195a0de178db040f6abb96902507ba25dd4a673cdd9cc28b8880512dba54561e8bc60d8f326c1e30
   languageName: node
   linkType: hard
 
@@ -1434,6 +1535,7 @@ __metadata:
     "@faker-js/faker": 6.0.0-alpha.5
     "@flex-development/grease": 2.0.0
     "@flex-development/log": 4.0.1-dev.3
+    "@flex-development/mango": 5.1.0
     "@flex-development/trext": 2.0.4
     "@flex-development/tutils": 4.8.0
     "@kadeluxe/ts-transform-paths": 1.7.18
@@ -1936,6 +2038,13 @@ __metadata:
   bin:
     browserslist: cli.js
   checksum: 18e09beeae32e69fea45fc3642240fb63027b1460d90e24da86377177dca3d82c80f8fa44469d95109e3962f08eb2a23e03037bd5e1f1ec38e4866e2a8572435
+  languageName: node
+  linkType: hard
+
+"bson-objectid@npm:~1.2.4":
+  version: 1.2.5
+  resolution: "bson-objectid@npm:1.2.5"
+  checksum: dcf6eadf0703d8039a167f5340b17f6f1438761852a37a94746667b82718e79140a47e04ef3d20e0a4f357a13116a7214e188ee9ebefa561ce0860fd00d758eb
   languageName: node
   linkType: hard
 
@@ -2757,6 +2866,18 @@ __metadata:
     supports-color:
       optional: true
   checksum: 14472d56fe4a94dbcfaa6dbed2dd3849f1d72ba78104a1a328047bb564643ca49df0224c3a17fa63533fd11dd3d4c8636cd861191232a2c6735af00cc2d4de16
+  languageName: node
+  linkType: hard
+
+"debug@npm:4.3.1":
+  version: 4.3.1
+  resolution: "debug@npm:4.3.1"
+  dependencies:
+    ms: 2.1.2
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 2c3352e37d5c46b0d203317cd45ea0e26b2c99f2d9dfec8b128e6ceba90dfb65425f5331bf3020fe9929d7da8c16758e737f4f3bfc0fce6b8b3d503bae03298b
   languageName: node
   linkType: hard
 
@@ -5120,6 +5241,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.isboolean@npm:3.0.3":
+  version: 3.0.3
+  resolution: "lodash.isboolean@npm:3.0.3"
+  checksum: b70068b4a8b8837912b54052557b21fc4774174e3512ed3c5b94621e5aff5eb6c68089d0a386b7e801d679cd105d2e35417978a5e99071750aa2ed90bffd0250
+  languageName: node
+  linkType: hard
+
 "lodash.isempty@npm:4.4.0":
   version: 4.4.0
   resolution: "lodash.isempty@npm:4.4.0"
@@ -5173,6 +5301,13 @@ __metadata:
   version: 4.4.0
   resolution: "lodash.pick@npm:4.4.0"
   checksum: 2c36cab7da6b999a20bd3373b40e31a3ef81fa264f34a6979c852c5bc8ac039379686b27380f0cb8e3781610844fafec6949c6fbbebc059c98f8fa8570e3675f
+  languageName: node
+  linkType: hard
+
+"lodash.uniq@npm:4.5.0":
+  version: 4.5.0
+  resolution: "lodash.uniq@npm:4.5.0"
+  checksum: a4779b57a8d0f3c441af13d9afe7ecff22dd1b8ce1129849f71d9bbc8e8ee4e46dfb4b7c28f7ad3d67481edd6e51126e4e2a6ee276e25906d10f7140187c392d
   languageName: node
   linkType: hard
 
@@ -5429,6 +5564,13 @@ __metadata:
   version: 1.0.1
   resolution: "min-indent@npm:1.0.1"
   checksum: bfc6dd03c5eaf623a4963ebd94d087f6f4bbbfd8c41329a7f09706b0cb66969c4ddd336abeb587bc44bc6f08e13bf90f0b374f9d71f9f01e04adc2cd6f083ef1
+  languageName: node
+  linkType: hard
+
+"mingo@npm:4.1.2":
+  version: 4.1.2
+  resolution: "mingo@npm:4.1.2"
+  checksum: 6708401f8edff72d0dcb6ef56e95b03ec0b46e35cb459993a21b5b882adef63a4d62347713d6fa062a3efdef732691bbc7f267e0d31a23a5d65657590d0de085
   languageName: node
   linkType: hard
 
@@ -6413,6 +6555,23 @@ __metadata:
   version: 1.5.1
   resolution: "q@npm:1.5.1"
   checksum: 147baa93c805bc1200ed698bdf9c72e9e42c05f96d007e33a558b5fdfd63e5ea130e99313f28efc1783e90e6bdb4e48b67a36fcc026b7b09202437ae88a1fb12
+  languageName: node
+  linkType: hard
+
+"qs-to-mongo@npm:2.0.0":
+  version: 2.0.0
+  resolution: "qs-to-mongo@npm:2.0.0"
+  dependencies:
+    bson-objectid: ~1.2.4
+    qs: ~6.7.0
+  checksum: 320573d4e552fb86b3eead4aefea1f9844840e0d6ef473f912112eb4ee534c96dbea1299b0f36aa053799a085ff8f835d31be58ab1feab6cea31bc4ef8988315
+  languageName: node
+  linkType: hard
+
+"qs@npm:~6.7.0":
+  version: 6.7.3
+  resolution: "qs@npm:6.7.3"
+  checksum: c91046d3a648374d4cb98a872b69753a039a5d57f879bd56174b57d80014ab2bea4f7bcaa5db5e6c1ca7d2e29119b4f844125a082a0facf30adeb90e8e686078
   languageName: node
   linkType: hard
 
@@ -7875,21 +8034,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uuid@npm:8.3.2, uuid@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
+  languageName: node
+  linkType: hard
+
 "uuid@npm:^3.3.3":
   version: 3.4.0
   resolution: "uuid@npm:3.4.0"
   bin:
     uuid: ./bin/uuid
   checksum: 58de2feed61c59060b40f8203c0e4ed7fd6f99d42534a499f1741218a1dd0c129f4aa1de797bcf822c8ea5da7e4137aa3673431a96dae729047f7aca7b27866f
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^8.3.2":
-  version: 8.3.2
-  resolution: "uuid@npm:8.3.2"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
   languageName: node
   linkType: hard
 

@@ -4,9 +4,7 @@
 
 - [x] Repository Setup
 - [ ] Models
-  - [ ] `Deliverer`
-  - [ ] `DeliveryGoat`
-  - [ ] `DeliveryPerson`
+  - [x] `DeliveryWorker`
   - [ ] `Dispatcher`
   - [x] `Location`
 - [ ] Samples

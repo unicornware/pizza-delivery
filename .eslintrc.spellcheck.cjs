@@ -54,6 +54,7 @@ const SKIP_WORDS = [
   'formatter',
   'fs',
   'globals',
+  'handoff',
   'impl',
   'instanceof',
   'jsonspec',

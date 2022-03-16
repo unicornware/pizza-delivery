@@ -92,6 +92,20 @@ describe('unit:models/Location', () => {
     })
   })
 
+  describe('#copy', () => {
+    it('should return new Location with the same coordinates', () => {
+      // Arrange
+      const subject = new TestSubject(X, Y)
+
+      // Act
+      const result = subject.copy()
+
+      // Expect
+      expect(result).to.be.instanceof(TestSubject)
+      expect(result.coordinates).to.deep.equal(subject.coordinates)
+    })
+  })
+
   describe('#equals', () => {
     type Case = Testcase<boolean> & {
       obj: ObjectPlain

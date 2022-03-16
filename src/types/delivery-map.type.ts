@@ -8,6 +8,6 @@ import type Location from '@pizza-delivery/models/location.model'
 /**
  * Maps houses to total number of pizzas delivered.
  */
-type DeliveryMap = Map<Location, number>
+type DeliveryMap = Map<ReturnType<Location['toString']>, number>
 
 export default DeliveryMap

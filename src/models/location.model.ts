@@ -70,6 +70,18 @@ class Location implements ILocation {
   }
 
   /**
+   * Returns a new `Location` instance with the same coordinates as the current
+   * location.
+   *
+   * @public
+   *
+   * @return {Location} Copy of current location
+   */
+  public copy(): Location {
+    return new Location(this.x, this.y)
+  }
+
+  /**
    * Checks if `obj` and the current location are the same location.
    *
    * @public
