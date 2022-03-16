@@ -4,3 +4,4 @@
  */
 
 export type { default as Coordinate } from './coordinate.type'
+export type { default as DeliveryMap } from './delivery-map.type'
