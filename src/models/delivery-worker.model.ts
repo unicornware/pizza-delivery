@@ -5,10 +5,10 @@
 
 import {
   DocumentPartial,
-  MangoFinder,
   MangoSearchParams as SearchParams
 } from '@flex-development/mango'
 import { OneOrMany } from '@flex-development/tutils'
+import { Employee } from '@pizza-delivery/abstracts'
 import { DispatchInstruction } from '@pizza-delivery/enums'
 import { DispatchInstructionError } from '@pizza-delivery/errors'
 import { IHouse } from '@pizza-delivery/interfaces'
@@ -19,21 +19,16 @@ import Location from './location.model'
  * Object representing a pizza delivery worker.
  *
  * After each move, workers deliver a pizza to the house at their new location.
+ *
+ * @extends Employee
  */
-class DeliveryWorker {
+class DeliveryWorker extends Employee {
   /**
    * @public
    * @readonly
    * @property {DeliveryMap} deliveries - Delivery map
    */
   public readonly deliveries: DeliveryMap
-
-  /**
-   * @public
-   * @readonly
-   * @property {MangoFinder<IHouse>} houses - House query client
-   */
-  public readonly houses: MangoFinder<IHouse>
 
   /**
    * @public
@@ -55,8 +50,9 @@ class DeliveryWorker {
     location: Location = new Location(0, 0),
     deliveries: DeliveryMap = new Map<string, number>()
   ) {
+    super()
+
     this.deliveries = deliveries
-    this.houses = new MangoFinder<IHouse>({ mingo: { idKey: 'id' } })
     this.location = location
 
     this.handoff(this.location)
