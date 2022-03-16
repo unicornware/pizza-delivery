@@ -971,6 +971,7 @@ const config = {
       rules: {
         '@typescript-eslint/no-magic-numbers': 0,
         '@typescript-eslint/no-unused-expressions': 0,
+        '@typescript-eslint/restrict-template-expressions': 0,
         'unicorn/consistent-destructuring': 0,
         'unicorn/consistent-function-scoping': 0,
         'unicorn/explicit-length-check': 0,

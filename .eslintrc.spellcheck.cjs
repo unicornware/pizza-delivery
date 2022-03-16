@@ -55,6 +55,7 @@ const SKIP_WORDS = [
   'fs',
   'globals',
   'impl',
+  'instanceof',
   'jsonspec',
   'loadenv',
   'matcher',

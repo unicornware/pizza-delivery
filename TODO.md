@@ -8,7 +8,7 @@
   - [ ] `DeliveryGoat`
   - [ ] `DeliveryPerson`
   - [ ] `Dispatcher`
-  - [ ] `Location`
+  - [x] `Location`
 - [ ] Samples
   - [ ] `person-with-goat`
   - [ ] `person`

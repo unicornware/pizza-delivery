@@ -4,7 +4,6 @@
  * @see https://mochajs.org/#defining-a-root-hook-plugin
  */
 
-import faker from '@faker-js/faker'
 import type { RootHookObject } from 'mocha'
 import { inspect } from 'node:util'
 

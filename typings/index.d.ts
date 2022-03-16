@@ -1,3 +1,4 @@
+/// <reference path='@faker-js/faker/index.d.ts' />
 /// <reference path='@vercel/index.d.ts' />
 /// <reference path='chai/index.d.ts' />
 /// <reference path='mocha/index.d.ts' />

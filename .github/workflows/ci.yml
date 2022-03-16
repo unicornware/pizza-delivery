@@ -47,9 +47,9 @@ jobs:
       - id: check-style
         name: Check code style
         run: yarn check:style
-      # - id: test
-      #   name: Run test suites
-      #   run: yarn test:ci
+      - id: test
+        name: Run test suites
+        run: yarn test:ci
       - id: build
         name: Build project
         run: NODE_ENV=production yarn build

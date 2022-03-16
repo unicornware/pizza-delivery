@@ -73,7 +73,8 @@
     "test:coverage": "yarn test; serve ./coverage/lcov-report"
   },
   "dependencies": {
-    "@flex-development/tutils": "4.8.0"
+    "@flex-development/tutils": "4.8.0",
+    "@sindresorhus/is": "4.6.0"
   },
   "devDependencies": {
     "@commitlint/cli": "13.2.1",

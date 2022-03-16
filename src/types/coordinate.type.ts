@@ -7,6 +7,6 @@
  * One member in a pair of numbers that represent a single point on a
  * two-dimensional grid.
  */
-type Coordinate = bigint | number
+type Coordinate = number
 
 export default Coordinate

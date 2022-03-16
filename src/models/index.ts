@@ -3,4 +3,4 @@
  * @module pizza-delivery/models
  */
 
-export {}
+export { default as Location } from './location.model'
