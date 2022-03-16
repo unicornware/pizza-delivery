@@ -55,6 +55,7 @@ const config: UserConfig = {
         'dtos',
         'enums',
         'env',
+        'errors',
         'esm',
         'github',
         'hybrid',
