@@ -8,9 +8,7 @@
   - [x] `Dispatcher`
   - [x] `Location`
   - [x] `Pizzeria`
-- [ ] Samples
-  - [ ] `person-with-goat`
-  - [ ] `person`
+- [x] Challenge Runner
 - [ ] QA - Documentation
   - [ ] `CONTRIBUTING`
   - [ ] `README`
