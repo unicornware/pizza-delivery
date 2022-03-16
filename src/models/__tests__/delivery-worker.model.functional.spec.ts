@@ -67,7 +67,7 @@ describe('functional:models/DeliveryWorker', () => {
 
       cases.forEach(({ direction, pizzas }) => {
         const total = isNIL(pizzas) ? 1 : pizzas
-        const deliver = `${total} ${total === 1 ? 'pizza' : 'pizzas'}`
+        const deliver = `${total} pizza${total === 1 ? '' : 's'}`
 
         it(`should move ${direction} and deliver ${deliver}`, function (this) {
           // Arrange
@@ -83,54 +83,6 @@ describe('functional:models/DeliveryWorker', () => {
           // Expect
           expect(spy_move).to.have.been.calledOnceWith(dispatch)
           expect(spy_handoff).to.have.been.calledOnceWith(location, pizzas)
-        })
-      })
-    })
-
-    describe('dispatch is DispatchInstruction[]', () => {
-      type Case = Testcase<number> & { dispatch: DispatchInstruction[] }
-
-      const cases: Case[] = [
-        { dispatch: [DispatchInstruction.EAST], expected: 2 },
-        {
-          dispatch: [
-            DispatchInstruction.NORTH,
-            DispatchInstruction.EAST,
-            DispatchInstruction.SOUTH,
-            DispatchInstruction.WEST
-          ],
-          expected: 4
-        },
-        {
-          dispatch: [
-            DispatchInstruction.NORTH,
-            DispatchInstruction.SOUTH,
-            DispatchInstruction.NORTH,
-            DispatchInstruction.SOUTH,
-            DispatchInstruction.NORTH,
-            DispatchInstruction.SOUTH,
-            DispatchInstruction.NORTH,
-            DispatchInstruction.SOUTH,
-            DispatchInstruction.NORTH,
-            DispatchInstruction.SOUTH
-          ],
-          expected: 2
-        }
-      ]
-
-      cases.forEach(({ dispatch, expected }) => {
-        const houses = `${expected} houses`
-        const instructions = `[${dispatch.toString()}]`
-
-        it(`should deliver pizza to ${houses} given ${instructions}`, () => {
-          // Arrange
-          const subject = new TestSubject()
-
-          // Act
-          subject.deliver(dispatch)
-
-          // Expect
-          expect(subject.deliveries.size).to.equal(expected)
         })
       })
     })
@@ -182,7 +134,7 @@ describe('functional:models/DeliveryWorker', () => {
 
     cases.forEach(({ direction, expected, steps }) => {
       const total = isNIL(steps) ? 1 : steps
-      const units = `${total} ${total === 1 ? 'step' : 'steps'}`
+      const units = `${total} step${total === 1 ? '' : 's'}`
 
       it(`should move ${direction} ${units}`, function (this) {
         // Arrange

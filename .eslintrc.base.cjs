@@ -865,9 +865,18 @@ const config = {
       }
     },
     {
-      files: ['src/models/delivery-worker.model.ts'],
+      files: [
+        'src/models/delivery-worker.model.ts',
+        'src/models/dispatcher.model.ts'
+      ],
       rules: {
         'unicorn/no-array-callback-reference': 0
+      }
+    },
+    {
+      files: ['src/models/dispatcher.model.ts'],
+      rules: {
+        'unicorn/no-array-reduce': 0
       }
     },
     {

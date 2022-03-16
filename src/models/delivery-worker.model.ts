@@ -7,7 +7,6 @@ import {
   DocumentPartial,
   MangoSearchParams as SearchParams
 } from '@flex-development/mango'
-import { OneOrMany } from '@flex-development/tutils'
 import { Employee } from '@pizza-delivery/abstracts'
 import { DispatchInstruction } from '@pizza-delivery/enums'
 import { DispatchInstructionError } from '@pizza-delivery/errors'
@@ -83,21 +82,13 @@ class DeliveryWorker extends Employee {
    *
    * @public
    *
-   * @param {Location | OneOrMany<string>} dispatch - Location or instructions
+   * @param {Location | string} dispatch - House location or dispatcher input
    * @param {number} [pizzas] - Number of pizzas to deliver
    * @return {this} Current worker
    */
-  public deliver(
-    dispatch: Location | OneOrMany<string>,
-    pizzas?: number
-  ): this {
+  public deliver(dispatch: Location | string, pizzas?: number): this {
     if (dispatch instanceof Location) return this.handoff(dispatch, pizzas)
-
-    for (const input of [dispatch].flat()) {
-      this.move(input).handoff(this.location.copy(), pizzas)
-    }
-
-    return this
+    return this.move(dispatch).handoff(this.location.copy(), pizzas)
   }
 
   /**

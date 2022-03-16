@@ -75,7 +75,8 @@
   "dependencies": {
     "@flex-development/mango": "5.1.0",
     "@flex-development/tutils": "4.8.0",
-    "@sindresorhus/is": "4.6.0"
+    "@sindresorhus/is": "4.6.0",
+    "group-items": "2.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "13.2.1",

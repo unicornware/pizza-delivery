@@ -3,9 +3,9 @@
 ## v1.0.0
 
 - [x] Repository Setup
-- [ ] Models
+- [x] Models
   - [x] `DeliveryWorker`
-  - [ ] `Dispatcher`
+  - [x] `Dispatcher`
   - [x] `Location`
 - [ ] Samples
   - [ ] `person-with-goat`

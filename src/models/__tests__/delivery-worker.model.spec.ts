@@ -34,13 +34,10 @@ describe('unit:models/DeliveryWorker', () => {
   })
 
   describe('get visited', () => {
-    let subject: TestSubject
-
-    before(() => {
-      subject = new TestSubject()
-    })
-
     it('should return array containing IHouse objects', () => {
+      // Arrange
+      const subject = new TestSubject()
+
       // Act
       const results = subject.visited
 
@@ -55,12 +52,6 @@ describe('unit:models/DeliveryWorker', () => {
   })
 
   describe('#move', () => {
-    let subject: TestSubject
-
-    before(() => {
-      subject = new TestSubject()
-    })
-
     it('should throw DispatchInstructionError', () => {
       // Arrange
       const instruction = '🍕'
@@ -68,7 +59,7 @@ describe('unit:models/DeliveryWorker', () => {
 
       // Act
       try {
-        subject.move(instruction)
+        new TestSubject().move(instruction)
       } catch (e: unknown) {
         error = e as typeof error
       }

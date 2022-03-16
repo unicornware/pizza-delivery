@@ -1579,6 +1579,7 @@ __metadata:
     eslint-plugin-spellcheck: 0.0.19
     eslint-plugin-tree-shaking: 1.10.0
     eslint-plugin-unicorn: 41.0.0
+    group-items: 2.1.0
     growl: 1.10.5
     husky: 7.0.4
     is-ci: 3.0.1
@@ -2932,6 +2933,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deep-eql@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "deep-eql@npm:4.0.1"
+  dependencies:
+    type-detect: ^4.0.0
+  checksum: 304161c2d94566f36dcd6dea7b0cdbd555fe5e98eaab5f0d8203b12507f81ed4042e4040b3e4bd1c8f893f865cec643f725c6aa184984947fb69d1a80d19a9f7
+  languageName: node
+  linkType: hard
+
 "deep-extend@npm:^0.6.0":
   version: 0.6.0
   resolution: "deep-extend@npm:0.6.0"
@@ -4231,6 +4241,15 @@ __metadata:
   version: 4.2.9
   resolution: "graceful-fs@npm:4.2.9"
   checksum: 68ea4e07ff2c041ada184f9278b830375f8e0b75154e3f080af6b70f66172fabb4108d19b3863a96b53fc068a310b9b6493d86d1291acc5f3861eb4b79d26ad6
+  languageName: node
+  linkType: hard
+
+"group-items@npm:2.1.0":
+  version: 2.1.0
+  resolution: "group-items@npm:2.1.0"
+  dependencies:
+    deep-eql: ^4.0.0
+  checksum: 5cb3928daf6d68527851144e536da7dd7df4b5631c96f4d76df957217d4c3eb68d2b926cc2b5604f90b4450acf1ee5b227e9bd2ed8e05a51fc156487925548d0
   languageName: node
   linkType: hard
 
