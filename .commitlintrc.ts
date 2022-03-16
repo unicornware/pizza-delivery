@@ -53,6 +53,7 @@ const config: UserConfig = {
         'deps-opt',
         'deps-peer',
         'dtos',
+        'enums',
         'env',
         'esm',
         'github',
