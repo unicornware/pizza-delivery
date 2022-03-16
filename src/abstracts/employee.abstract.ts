@@ -41,7 +41,7 @@ abstract class Employee {
   public abstract get visited(): IHouse[]
 
   /**
-   * Executes a search against the houses that have been has visited.
+   * Executes a search against houses that have been has visited.
    *
    * @public
    * @abstract

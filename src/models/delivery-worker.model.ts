@@ -147,7 +147,7 @@ class DeliveryWorker extends Employee {
   }
 
   /**
-   * Executes a search against the houses the worker has visited.
+   * Executes a search against houses the worker has visited.
    *
    * @public
    *

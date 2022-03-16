@@ -146,7 +146,7 @@ class Dispatcher extends Employee {
   }
 
   /**
-   * Executes a search against the houses {@link team} has visited.
+   * Executes a search against houses {@link team} has visited.
    *
    * @public
    *
