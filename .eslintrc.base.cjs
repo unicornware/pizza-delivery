@@ -859,6 +859,12 @@ const config = {
       }
     },
     {
+      files: ['src/errors/dispatch-instruction.err.ts'],
+      rules: {
+        '@typescript-eslint/restrict-template-expressions': 0
+      }
+    },
+    {
       files: ['tools/helpers/loadenv.cjs'],
       rules: {
         'unicorn/no-array-reduce': 0,
