@@ -8,7 +8,7 @@
 
 **[Getting Started](#getting-started)**  
 **[Usage](#usage)**  
-**[Development & Testing](#development-and-testing)**  
+**[Development & Testing](#development-&-testing)**  
 **[Built With](#built-with)**  
 **[Contributing](CONTRIBUTING.md)**  
 **[Todo List](TODO.md)**
