@@ -46,6 +46,7 @@ const config: UserConfig = {
       2,
       'always',
       [
+        'abstracts',
         'cjs',
         'deploy',
         'deps',
