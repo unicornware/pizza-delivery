@@ -160,9 +160,9 @@ const options: IGreaseOptions = {
   releaseBranchWhitelist: ['release/*'],
   releaseCommitMessageFormat: `release: ${workspace}@{{currentTag}}`,
   scripts: {
-    postchangelog: `yarn pack -o %s-%v.tgz ${(argv.d && '-n') ?? ''}`.trim(),
+    postchangelog: `yarn pack -o %s-%v.tgz ${argv.d ? '-n' : ''}`.trim(),
     postcommit: 'git pnv',
-    postgreaser: 'trash *.tgz',
+    postgreaser: 'trash ./*.tgz',
     prerelease: 'yarn test'
   },
   // `continuous-deployment` workflow will create new tag

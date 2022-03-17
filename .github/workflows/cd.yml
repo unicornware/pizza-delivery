@@ -23,7 +23,7 @@ on:
         description: release tag
         required: true
 jobs:
-  cd:
+  ci:
     name: Wait for continuous-integration workflow to complete
     runs-on: ubuntu-latest
     strategy:
