@@ -7,6 +7,7 @@
 ## Overview
 
 **[Getting Started](#getting-started)**  
+**[Installation](#installation)**  
 **[Usage](#usage)**  
 **[Development & Testing](#development-&-testing)**  
 **[Built With](#built-with)**  
@@ -19,6 +20,45 @@
 
 The project focuses on using object-oriented programming principles to answer
 questions posed by the [Pizza Delivery Exercise][5].
+
+## Installation
+
+1. Authenticate with [GitHub Package Registry][6] (GPR)
+
+   **NPM**
+
+   ```properties
+   //registry.npmjs.org/:_authToken=$PAT_GPR
+   @unicornware:registry=https://npm.pkg.github.com/
+   ```
+
+   **Yarn 1**
+
+   ```properties
+   //registry.yarnpkg.com/:_authToken=$PAT_GPR
+   @unicornware:registry=https://npm.pkg.github.com/
+   ```
+
+   **Yarn 2**
+
+   ```yml
+   npmScopes:
+     unicornware:
+       npmAlwaysAuth: true
+       npmAuthToken: $PAT_GPR
+       npmRegistryServer: https://npm.pkg.github.com
+   ```
+
+   where:
+
+   - `$PAT_GPR` is a [GitHub personal access token][7] with at least the
+     `read:packages` scope attached.
+
+2. Add project to `dependencies`
+
+   ```zsh
+   yarn add @unicornware/pizza-delivery # or npm i @unicornware/pizza-delivery
+   ```
 
 ## Usage
 
@@ -43,7 +83,7 @@ questions posed by the [Pizza Delivery Exercise][5].
 > - `^v^v^v^v^v` delivers a bunch of pizzas to some very lucky people at only
 >   two houses.
 >
-> Given the string of dispatcher inputs in [this file][6], how many houses
+> Given the string of dispatcher inputs in [this file][8], how many houses
 > receive at least one pizza?
 
 To find out the answer to Part 1, run the following in your terminal:
@@ -123,4 +163,6 @@ and running tests.
 [3]: https://github.com/sindresorhus/is
 [4]: https://github.com/meyfa/group-items
 [5]: #pizza-delivery-exercise
-[6]: ./__fixtures__/dispatcher-inputs.txt
+[6]: https://github.com/features/packages
+[7]: https://github.com/settings/tokens/new
+[8]: ./__fixtures__/dispatcher-inputs.txt
